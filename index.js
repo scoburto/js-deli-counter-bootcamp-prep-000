@@ -3,7 +3,6 @@ function takeANumber(line,name) {
   line.push(name);
   var position = line.length;
   var msg = "Welcome, " + name +"." + " You are number " + position + " in line.";
-  katzDeliLine.push(name);
   return msg;
 }
 
