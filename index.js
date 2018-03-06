@@ -6,14 +6,14 @@ function takeANumber(line,name) {
   return msg;
 }
 
-function nowServing() {
-  if (katzDeliLine.length===0) {
+function nowServing(list) {
+  if (list.length===0) {
     return "There is nobody waiting to be served!"
   }
   else {
-    return "Currently serving " + katzDeliLine[0] +".";
+    return "Currently serving " + list[0] +".";
   }
-  katzDeliLine.shift();
+  list.shift();
 }
 
 function currentLine() {
