@@ -14,7 +14,7 @@ function nowServing() {
   else {
     return "Currently serving " + katzDeliLine[0] +".";
   }
-  katzDeliLine.unshift();
+  katzDeliLine.shift();
 }
 
 function currentLine() {
