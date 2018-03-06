@@ -21,9 +21,9 @@ if (list.length===0) {
   return "The line is currently empty.";
 }
 else {
-var msg = "The line is currently";
+var msg = "The line is currently: ";
 for (var i = 0; i<list.length; i++)  {
-  msg = msg + ": "+ i+1 + ". " + list[i] + ", ";
+  msg = msg + i+1 + ". " + list[i] + ", ";
 }
 return msg;
 }
