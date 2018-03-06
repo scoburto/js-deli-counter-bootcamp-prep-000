@@ -16,10 +16,10 @@ function nowServing(list) {
   list.shift();
 }
 
-function currentLine() {
-var list = "The line is currently: ";
-for (var i = 0; i<katzDeliLine.length; i++)  {
-  list = list + i+1 + ". " + katzDeliLine[i] + ", ";
+function currentLine(list) {
+var msg = "The line is currently: ";
+for (var i = 0; i<list.length; i++)  {
+  msg = msg + i+1 + ". " + list[i] + ", ";
 }
-return list;
+return msg;
 }
