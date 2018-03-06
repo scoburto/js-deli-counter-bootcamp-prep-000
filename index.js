@@ -11,6 +11,7 @@ function nowServing(list) {
     return "There is nobody waiting to be served!"
   }
   else {
+    console.log("Currently serving" + list[0] + ".");
     return "Currently serving " + list[0] +".";
   }
   list.shift();
