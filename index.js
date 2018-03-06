@@ -17,7 +17,7 @@ function nowServing(list) {
 }
 
 function currentLine(list) {
-var msg = "The line is currently: ";
+var msg = "The line is currently ": ";
 for (var i = 0; i<list.length; i++)  {
   msg = msg + i+1 + ". " + list[i] + ", ";
 }
