@@ -25,9 +25,10 @@ if (list.length===0) {
 else {
 var msg = "The line is currently: ";
 for (var i = 0; i<list.length-1; i++)  {
-  msg = msg + i+1 + ". " + list[i] + ", ";
+  var counter = i+1;
+  msg = msg + counter + ". " + list[i] + ", ";
 }
-msg = msg + i+1 + ". " + list[i];
+msg = msg + counter + ". " + list[i];
 return msg;
 }
 }
