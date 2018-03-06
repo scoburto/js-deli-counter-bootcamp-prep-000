@@ -7,14 +7,15 @@ function takeANumber(line,name) {
 }
 
 function nowServing(list) {
+  var msg = "There is nobody waiting to be served!"
   if (list.length===0) {
-    return "There is nobody waiting to be served!"
+    return msg;
   }
   else {
-    console.log("Currently serving " + list[0] + ".");
-    return "Currently serving " + list[0] +".";
+    msg = "Currently serving " + list[0] +".";
+    list.shift();
+    return msg;
   }
-  list.shift();
 }
 
 function currentLine(list) {
