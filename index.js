@@ -23,9 +23,10 @@ if (list.length===0) {
 }
 else {
 var msg = "The line is currently: ";
-for (var i = 0; i<list.length; i++)  {
+for (var i = 0; i<list.length-1; i++)  {
   msg = msg + i+1 + ". " + list[i] + ", ";
 }
+msg = msg + i+1 + ". " + list[i];
 return msg;
 }
 }
