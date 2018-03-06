@@ -29,7 +29,7 @@ for (var i = 0; i<list.length-1; i++)  {
   msg = msg + position + ". " + list[i] + ", ";
 }
 ++position;
-msg = msg + position + ". " + list[position];
+msg = msg + position + ". " + list[position-1];
 return msg;
 }
 }
