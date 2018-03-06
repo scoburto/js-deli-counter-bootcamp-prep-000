@@ -28,6 +28,7 @@ for (var i = 0; i<list.length-1; i++)  {
   var counter = i+1;
   msg = msg + counter + ". " + list[i] + ", ";
 }
+counter++;
 msg = msg + counter + ". " + list[counter];
 return msg;
 }
